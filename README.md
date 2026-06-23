@@ -86,7 +86,6 @@ rag-fastapi/
 ### Create a virtual environment
 
 ```bash
-git clone <your-repo-url>
 cd RAG-FASTAPI
 ```
 
