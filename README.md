@@ -2,8 +2,6 @@
 
 A production-style Retrieval-Augmented Generation (RAG) service that answers questions over the **Horizon Tours & Travel** knowledge base, built with **FastAPI**, **LangChain**, **ChromaDB**, **HuggingFace Embeddings**, and **Groq**.
 
-This project was migrated from a Kaggle notebook prototype into a clean, testable, CI-ready backend service suitable for a portfolio, technical interview, or as a foundation for production deployment.
-
 ---
 
 ## Project Overview
