@@ -72,8 +72,11 @@ rag-fastapi/
 │   ├── services/rag_service.py  # All business logic lives here
 │   └── utils/logger.py          # Centralized logging
 ├── scripts/build_index.py       # Indexing workflow entry point
+├── tests/                       # test_health.py, test_ask.py
 ├── data/{pdfs,chroma}/          # Source PDFs and persisted vector store
 ├── requirements.txt
+├── pytest.ini
+├── ruff.toml
 ├── Makefile
 ├── .env.example
 └── .gitignore
@@ -180,6 +183,17 @@ curl -X POST http://localhost:8000/api/v1/ask \
   ]
 }
 ```
+
+---
+
+## Running Tests & the Linter
+
+```bash
+.venv/bin/python -m pytest -v
+.venv/bin/python -m ruff check .
+```
+
+`test_ask.py` fully mocks the RAG service — no real calls to Groq or Chroma are made during tests.
 
 ---
 
