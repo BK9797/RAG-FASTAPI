@@ -162,7 +162,7 @@ curl http://localhost:8000/api/v1/health
 {
   "status": "healthy",
   "vectorstore_loaded": true,
-  "model": "llama-3.1-70b-versatile"
+  "model": "llama-3.3-70b-versatile"
 }
 ```
 
